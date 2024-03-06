@@ -1,6 +1,6 @@
 {
   "name": "react-native-teste-bob",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "asdasd",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
