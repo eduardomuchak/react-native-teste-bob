@@ -1,5 +1,6 @@
 /* eslint-disable react-native/no-inline-styles */
 /* eslint-disable @typescript-eslint/no-shadow */
+/* eslint-disable react-hooks/exhaustive-deps */
 import { Ionicons } from '@expo/vector-icons';
 import React, {
   Fragment,
@@ -8,12 +9,7 @@ import React, {
   useState,
   type ReactNode,
 } from 'react';
-import {
-  Pressable,
-  SafeAreaView,
-  View,
-  type PressableProps,
-} from 'react-native';
+import { Pressable, SafeAreaView, View } from 'react-native';
 import Animated, {
   CurvedTransition,
   Easing,
@@ -34,6 +30,7 @@ import {
 
 import { Text } from '../text/text-component';
 
+import type { PressableProps } from 'react-native/Libraries/Components/Pressable/Pressable';
 import { theme } from '../../theme';
 import { AppError } from '../../utils/app-error';
 import { toast } from './toast-handler';
@@ -197,7 +194,6 @@ function Toast({
     opacity.value = 0;
     translateX.value = offset.value;
     onDismiss(id);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleToastLongPress = () => {
@@ -245,7 +241,6 @@ function Toast({
     return () => {
       onHide && onHide();
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   if (!title && !title?.trim()?.length) {

@@ -1,6 +1,6 @@
 {
   "name": "react-native-teste-bob",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "asdasd",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -80,10 +80,15 @@
     "@types/react": "^18.2.44"
   },
   "peerDependencies": {
+    "@types/react": "*",
+    "@types/react-native": "*",
     "react": "*",
     "react-native": "*",
     "react-native-gesture-handler": "*",
-    "react-native-reanimated": "*"
+    "react-native-reanimated": "*",
+    "react-dom": "*",
+    "react-native-safe-area-context": "*",
+    "react-native-svg": "*"
   },
   "workspaces": [
     "example"
