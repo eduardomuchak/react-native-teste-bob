@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native'
 
-import { theme } from '../../theme'
+import { defaultTheme } from '../../theme'
 
 import type { TextProps } from './text-component'
 
@@ -10,8 +10,8 @@ export const text = ({ color, fontSize, textAlign, fontWeight, letterSpacing }: 
       color,
       textAlign,
       letterSpacing,
-      fontSize: theme.fontSizes[fontSize ?? 'md'],
-      fontFamily: theme.fontWeight[fontWeight ?? 'semiBold'],
+      fontSize: defaultTheme.fontSizes[fontSize ?? 'md'],
+      fontFamily: defaultTheme.fontWeight[fontWeight ?? 'semiBold'],
       includeFontPadding: false
     }
   }).text

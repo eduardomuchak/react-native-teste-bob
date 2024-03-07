@@ -1,7 +1,7 @@
 import React, { type ReactNode } from 'react'
 import { Text as NativeText, type TextProps as NativeTextProps, type TextStyle } from 'react-native'
 
-import { theme } from '../../theme'
+import { defaultTheme } from '../../theme'
 
 import { styles } from './text-styles'
 
@@ -10,7 +10,7 @@ export type TextProps = {
   color?: TextStyle['color']
   children?: string | ReactNode
   textAlign?: TextStyle['textAlign']
-  fontSize?: keyof typeof theme.fontSizes
+  fontSize?: keyof typeof defaultTheme.fontSizes
   fontWeight?: 'normal' | 'semiBold' | 'bold' | 'extraBold' | 'light'
 } & NativeTextProps
 

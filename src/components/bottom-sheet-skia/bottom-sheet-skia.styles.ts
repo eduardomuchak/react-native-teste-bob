@@ -1,13 +1,11 @@
-import { StyleSheet } from 'react-native'
+import { createStyleSheet } from 'react-native-unistyles'
 
-import { theme } from '../../theme'
-
-export const styles = StyleSheet.create({
+export const styles = createStyleSheet((theme) => ({
   bottomSheetContainer: {
     position: 'absolute',
     width: '100%',
     height: '100%',
-    backgroundColor: '#fff',
+    backgroundColor: theme.colors.white,
     borderTopLeftRadius: 24,
     borderTopRightRadius: 24,
     top: 0,
@@ -31,4 +29,4 @@ export const styles = StyleSheet.create({
     backgroundColor: theme.colors.status.transmitida,
     borderRadius: 8
   }
-})
+}))

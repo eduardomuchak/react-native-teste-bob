@@ -2,7 +2,7 @@ import { Dimensions } from 'react-native'
 
 const fontScale = Dimensions.get('screen').fontScale
 
-export const theme = {
+export const defaultTheme = {
   colors: {
     primary: {
       100: '#DEF3F3',
@@ -122,5 +122,28 @@ export const theme = {
     md: 768,
     lg: 992,
     xl: 1280
+  }
+}
+
+export const secondaryTheme = {
+  colors: {
+    primary: {
+      100: 'red',
+      200: 'blue',
+      300: 'green',
+      350: 'yellow',
+      400: 'black',
+      500: 'white'
+    },
+    status: {
+      transmitida: 'red'
+    },
+    white: '#D9D',
+    error: '#FC2C00',
+    warn: '#FCC400',
+    darkWarn: '#FFAE42',
+    success: '#0BD307',
+    info: '#00B0FC',
+    notify: '#F3642D'
   }
 }

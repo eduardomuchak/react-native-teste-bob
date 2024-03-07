@@ -23,7 +23,7 @@ import Check from '../../assets/icons/check.svg'
 import Close from '../../assets/icons/close.svg'
 import Info from '../../assets/icons/info-quadrado.svg'
 import Sino from '../../assets/icons/sino.svg'
-import { theme } from '../../theme'
+import { defaultTheme } from '../../theme'
 import { AppError } from '../../utils/app-error'
 import { Text } from '../text/text-component'
 
@@ -305,10 +305,10 @@ const iconsFeedback: Record<ToastFeedbackType, ReactNode> = {
 }
 
 const feedbackColors: FeedbackTypeLiterals = {
-  success: theme.colors.success,
-  notify: theme.colors.notify,
-  error: theme.colors.error,
-  info: theme.colors.info
+  success: defaultTheme.colors.success,
+  notify: defaultTheme.colors.notify,
+  error: defaultTheme.colors.error,
+  info: defaultTheme.colors.info
 }
 
 const feedbackTitle: FeedbackTypeLiterals = {

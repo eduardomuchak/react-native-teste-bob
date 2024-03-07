@@ -6,10 +6,11 @@ import Animated, {
   useSharedValue,
   withSpring
 } from 'react-native-reanimated'
+import { useStyles } from 'react-native-unistyles'
 
 import { Gesture, GestureDetector } from 'react-native-gesture-handler'
 
-import { styles } from './bottom-sheet-skia.styles'
+import { styles as stylesheet } from './bottom-sheet-skia.styles'
 
 type BottonSheetActions = {
   closeBottomSheet: () => void
@@ -22,6 +23,8 @@ type BottomSheetGustavaoProps = {
 }
 
 export function BottomSheetGustavao({ minHeight, children, maxHeight }: BottomSheetGustavaoProps) {
+  const { styles } = useStyles(stylesheet)
+
   const translateY = useSharedValue(minHeight)
   const isOpen = useRef<boolean>(false)
 
