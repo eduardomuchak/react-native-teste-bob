@@ -48,7 +48,7 @@ export const theme = {
       500: '#FF7F27'
     },
     blackCoral: '#5C5E64',
-    pastelBlue: '#B0BEC5',
+    pastelBlue: '#E15252',
     black: '#000000',
     white: '#FFFFFF',
     red: {
