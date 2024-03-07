@@ -1,6 +1,8 @@
 import { createStyleSheet } from 'react-native-unistyles'
 
-export const styles = createStyleSheet((theme) => ({
+import type { defaultTheme } from '../../theme'
+
+export const styles = createStyleSheet((theme: typeof defaultTheme) => ({
   bottomSheetContainer: {
     position: 'absolute',
     width: '100%',
