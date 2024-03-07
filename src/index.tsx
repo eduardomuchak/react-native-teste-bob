@@ -1,2 +1,2 @@
-export * from './assets/icons'
-export * from './components'
+export * as icons from './assets/icons'
+export * as components from './components'
