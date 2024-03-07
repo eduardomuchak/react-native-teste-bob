@@ -11216,6 +11216,7 @@ __metadata:
     react-native-gesture-handler: ^2.15.0
     react-native-reanimated: ^3.7.2
     react-native-svg: ^15.1.0
+    react-native-unistyles: ^2.4.0
     release-it: ^15.0.0
     typescript: ^5.4.2
   peerDependencies:
@@ -11230,6 +11231,27 @@ __metadata:
     react-native-svg: "*"
   languageName: unknown
   linkType: soft
+
+"react-native-unistyles@npm:^2.4.0":
+  version: 2.4.0
+  resolution: "react-native-unistyles@npm:2.4.0"
+  peerDependencies:
+    "@react-native/normalize-colors": "*"
+    react: "*"
+    react-native: "*"
+    react-native-macos: "*"
+    react-native-web: "*"
+    react-native-windows: "*"
+  peerDependenciesMeta:
+    react-native-macos:
+      optional: true
+    react-native-web:
+      optional: true
+    react-native-windows:
+      optional: true
+  checksum: dce40906c809d6170c841f79632b5b640304452ae3b460cc29652985a45936c2df18201e45b58722cfd64ee414c69ab8885635af813fb190da9ad302a52d58bc
+  languageName: node
+  linkType: hard
 
 "react-native@npm:0.73.4":
   version: 0.73.4
