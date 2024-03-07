@@ -31,6 +31,11 @@ import {
 import { Text } from '../text/text-component';
 
 import type { PressableProps } from 'react-native/Libraries/Components/Pressable/Pressable';
+
+import Check from '../../assets/icons/check.svg';
+import Close from '../../assets/icons/close.svg';
+import Info from '../../assets/icons/info-quadrado.svg';
+import Sino from '../../assets/icons/sino.svg';
 import { theme } from '../../theme';
 import { AppError } from '../../utils/app-error';
 import { toast } from './toast-handler';
@@ -322,10 +327,10 @@ function FeedbackIcon({ feedbackType }: { feedbackType: ToastFeedbackType }) {
 }
 
 const iconsFeedback: Record<ToastFeedbackType, ReactNode> = {
-  success: <></>,
-  error: <></>,
-  info: <></>,
-  notify: <></>,
+  success: <Check />,
+  error: <Close />,
+  info: <Info />,
+  notify: <Sino />,
 };
 
 const feedbackColors: FeedbackTypeLiterals = {
