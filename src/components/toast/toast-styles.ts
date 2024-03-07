@@ -1,9 +1,9 @@
-import { Dimensions, StyleSheet } from 'react-native';
+import { Dimensions, StyleSheet } from 'react-native'
 
-const { width: screenWidth } = Dimensions.get('window');
+const { width: screenWidth } = Dimensions.get('window')
 
-export const toastWidth = screenWidth > 380 ? 360 : screenWidth - 32;
-export const toastBorderWidth = 12;
+export const toastWidth = screenWidth > 380 ? 360 : screenWidth - 32
+export const toastBorderWidth = 12
 
 export const styles = StyleSheet.create({
   toastList: {
@@ -13,7 +13,7 @@ export const styles = StyleSheet.create({
     elevation: 5,
     zIndex: 5,
     width: '100%',
-    paddingVertical: 12,
+    paddingVertical: 12
   },
   toastContainer: {
     backgroundColor: 'white',
@@ -34,7 +34,7 @@ export const styles = StyleSheet.create({
 
     shadowOpacity: 0.1,
     shadowRadius: 2,
-    shadowOffset: { height: 4, width: 2 },
+    shadowOffset: { height: 4, width: 2 }
   },
   toastTime: {
     height: 3,
@@ -42,22 +42,22 @@ export const styles = StyleSheet.create({
     borderBottomRightRadius: 4,
     top: 0,
     position: 'absolute',
-    left: 0,
+    left: 0
   },
   toastHeader: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: 12,
-    justifyContent: 'space-between',
+    justifyContent: 'space-between'
   },
   toastTitle: {
     color: '#3d3d3d',
     paddingTop: 8,
-    flex: 1,
+    flex: 1
   },
   toastDescription: {
     color: '#3d3d3d',
-    paddingRight: 8,
+    paddingRight: 8
   },
   feedbackIcon: {
     width: 28,
@@ -65,6 +65,6 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: 24,
-    marginTop: 6,
-  },
-});
+    marginTop: 6
+  }
+})

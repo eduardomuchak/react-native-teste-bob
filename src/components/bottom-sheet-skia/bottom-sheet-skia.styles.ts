@@ -1,5 +1,6 @@
-import { StyleSheet } from 'react-native';
-import { theme } from '../../theme';
+import { StyleSheet } from 'react-native'
+
+import { theme } from '../../theme'
 
 export const styles = StyleSheet.create({
   bottomSheetContainer: {
@@ -12,7 +13,7 @@ export const styles = StyleSheet.create({
     top: 0,
     overflow: 'hidden',
     borderWidth: 0.8,
-    borderColor: '#00000044',
+    borderColor: '#00000044'
   },
   gestureContainer: {
     alignItems: 'center',
@@ -20,7 +21,7 @@ export const styles = StyleSheet.create({
     width: '100%',
     position: 'relative',
     zIndex: 100,
-    height: 64,
+    height: 64
   },
   gestureActionIcon: {
     width: 68,
@@ -28,6 +29,6 @@ export const styles = StyleSheet.create({
     position: 'absolute',
     top: 16,
     backgroundColor: theme.colors.status.transmitida,
-    borderRadius: 8,
-  },
-});
+    borderRadius: 8
+  }
+})

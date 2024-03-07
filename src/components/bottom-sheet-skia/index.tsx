@@ -1,1 +1,1 @@
-export * from './bottom-sheet-skia.component';
+export * from './bottom-sheet-skia.component'
